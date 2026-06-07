@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA Boutique Case Study - C&D Web Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; }
+        p { margin: 0; margin-bottom: 15px; }
+
+        body {
+            background-color: #0f172a; 
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr;
+            margin: 0;
+            min-height: 100vh;
+            padding: 40px 0;
+            place-items: center;
+        }
+
+        .slide-container {
+            align-items: center;
+            background-color: #F9F8F6; 
+            border-radius: 4px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+            height: 720px;
+            justify-content: center;
+            overflow: hidden;
+            padding: 80px;
+            position: relative;
+            width: 1280px;
+            color: #1a1a1a;
+        }
+
+        .slide-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: #022c22; 
+            z-index: 10;
+        }
+
+        .slide-container h1, .slide-container h2, .slide-container h3 {
+            color: #022c22;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .slide-container p, .slide-container li, .slide-container .subtitle, .slide-container th, .slide-container td {
+            color: #334155;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .slide-container h1 { font-size: 96px; letter-spacing: -3px; line-height: 0.9; text-transform: uppercase; }
+        .slide-container .slide-title { font-size: 48px; margin-bottom: 60px; text-align: left; width: 100%; text-transform: uppercase; letter-spacing: 5px; border-bottom: 2px solid #022c22; padding-bottom: 20px; font-weight: 800; font-family: 'Montserrat', sans-serif; }
+        .slide-container h3 { font-size: 34px; margin-bottom: 25px; font-style: italic; }
+        .slide-container .subtitle { font-size: 28px; font-weight: 300; margin: 40px 0; font-family: 'Playfair Display', serif; }
+        .slide-container .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; }
+
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; width: 100%; }
+        .image-wrapper { overflow: hidden; height: 480px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
+        .image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+        .slide-container.bleed-image-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; align-items: start; }
+        .bleed-text-side { padding: 100px 80px; display: flex; flex-direction: column; justify-content: center; height: 100%; }
+        .bleed-image-side { height: 720px; width: 100%; object-fit: cover; }
+
+        .tiled-content { display: flex; gap: 40px; width: 100%; }
+        .tile { background-color: #ffffff; border: 1px solid #f1f5f9; padding: 50px; flex: 1; text-align: center; border-bottom: 10px solid #022c22; }
+        .tile .icon { font-size: 56px; color: #022c22; margin-bottom: 30px; }
+
+        .highlight-numbers-layout { display: grid; grid-template-columns: 45% 1fr; gap: 60px; align-items: center; }
+        .number { font-size: 180px; font-family: 'Playfair Display'; color: #022c22; font-weight: 700; line-height: 1; }
+        .number-label { font-size: 30px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: #64748b; }
+
+        .table-layout table { width: 100%; border-collapse: collapse; }
+        .table-layout th { background-color: #022c22; color: #ffffff; padding: 25px; text-align: left; font-family: 'Playfair Display'; font-size: 26px; }
+        .table-layout td { padding: 25px; border-bottom: 1px solid #f1f5f9; font-size: 22px; }
+
+        .chart-container { display: flex; flex-direction: column; gap: 30px; width: 100%; }
+        .bar { align-items: center; display: flex; gap: 30px; }
+        .bar .label { flex: 0 0 250px; font-weight: 800; text-transform: uppercase; font-size: 18px; color: #022c22; text-align: right; }
+        .bar .bar-inner { background-color: #e2e8f0; flex-grow: 1; height: 50px; }
+        .bar .bar-fill { background-color: #022c22; height: 100%; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px; color: white; font-weight: bold; }
+
+        .quote-layout blockquote { font-family: 'Playfair Display'; font-size: 58px; line-height: 1.1; text-align: center; color: #022c22; position: relative; padding: 0 100px; }
+        .quote-layout cite { display: block; margin-top: 50px; font-size: 22px; text-transform: uppercase; letter-spacing: 10px; font-weight: 400; text-align: center; color: #022c22; }
+    </style>
+</head>
+<body>
+
+<div class="slide-container" id="slide1">
+    <div class="content-area" style="text-align: center;">
+        <h1>SIA Boutique</h1>
+        <p class="subtitle">A Arte do E-commerce de Luxo</p>
+        <div style="margin: 50px auto; width: 100px; height: 3px; background: #022c22;"></div>
+        <p style="font-size: 16px; letter-spacing: 8px; text-transform: uppercase; font-weight: 600; color: #64748b;">ESTUDO DE CASO POR C&D WEB STUDIOS</p>
+    </div>
+</div>
+
+<div class="slide-container" id="slide2">
+    <h2 class="slide-title">A Visão Criativa</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <h3>Silent Luxury</h3>
+                <p>O desafio da SIA Boutique era transpor a exclusividade física para o digital. Implementámos o conceito de "Silent Luxury": sofisticação sem excessos.</p>
+                <p>A paleta de <strong>Verde Floresta Negro</strong> simboliza herança e sustentabilidade, elementos centrais da marca.</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 500px; height: 500px; border-radius: 50%; overflow: hidden; border: 12px solid #ffffff; box-shadow: 0 40px 80px rgba(0,0,0,0.15);">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Elite Fashion Model">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container bleed-image-layout" id="slide3">
+    <div class="bleed-text-side">
+        <h2 class="slide-title">Desktop Experience</h2>
+        <h3>Imersão Editorial</h3>
+        <p>A interface foi desenhada como uma revista de moda digital. Utilizamos grelhas assimétricas e tipografia generosa para elevar o valor percebido do produto.</p>
+        <p>Cada transição é suave, mimetizando o folhear de um catálogo físico de alta gama.</p>
+    </div>
+    <img class="bleed-image-side" src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="SIA Boutique Fashion Mockup">
+</div>
+
+<div class="slide-container" id="slide4">
+    <h2 class="slide-title">Curadoria do Detalhe</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Minimalist Accessories">
+            </div>
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dark Green Silk Texture">
+            </div>
+        </div>
+        <p style="margin-top: 30px; text-align: center; font-style: italic; color: #022c22;">"A perfeição digital alcançada através da atenção ao detalhe físico."</p>
+    </div>
+</div>
+
+<div class="slide-container" id="slide5">
+    <h2 class="slide-title">Engenharia de Conversão</h2>
+    <div class="content-area">
+        <div class="tiled-content">
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-gem"></i></div>
+                <h3>Estatuto</h3>
+                <p>Design focado em elevar o ticket médio através de uma perceção de valor premium.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                <h3>Rapidez</h3>
+                <p>Infraestrutura ultra-rápida (menos de 1s de carregamento) para evitar o abandono.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-fingerprint"></i></div>
+                <h3>Segurança</h3>
+                <p>Checkout blindado com as mais recentes normas europeias de proteção de dados.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide6">
+    <h2 class="slide-title">Resultados de Impacto</h2>
+    <div class="content-area">
+        <div class="highlight-numbers-layout">
+            <div>
+                <div class="number">+55%</div>
+                <div class="number-label">Tempo de Navegação</div>
+            </div>
+            <div>
+                <h3>Envolvimento Real</h3>
+                <p>O novo design da C&D Web Studios permitiu que as clientes explorassem mais coleções por sessão.</p>
+                <p>A taxa de conversão orgânica subiu 30% nos primeiros dois meses após o lançamento.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide7">
+    <h2 class="slide-title">Âmbito do Projeto</h2>
+    <div class="content-area">
+        <div class="table-layout">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Entregável da Agência</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Direção de Arte</strong></td>
+                        <td>Curadoria Visual e Mockups de Alta Fidelidade</td>
+                        <td><i class="fa-solid fa-check" style="color:#022c22;"></i> Concluído</td>
+                    </tr>
+                    <tr>
+                        <td><strong>E-commerce Dev</strong></td>
+                        <td>Desenvolvimento Front-end Customizado</td>
+                        <td><i class="fa-solid fa-check" style="color:#022c22;"></i> Concluído</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SEO & Speed</strong></td>
+                        <td>Otimização de Motores de Busca e Performance</td>
+                        <td><i class="fa-solid fa-check" style="color:#022c22;"></i> Concluído</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide8" style="background-color: #022c22;">
+    <div class="content-area">
+        <div class="quote-layout">
+            <blockquote style="color: #F9F8F6;">"O design não é apenas o que parece. Design é como funciona. Na SIA Boutique, criámos a harmonia perfeita."</blockquote>
+            <cite style="color: #ffffff;">— Manifesto C&D Web Studios</cite>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide9">
+    <div class="content-area" style="text-align: center;">
+        <h2 style="font-size: 80px; color: #022c22;">Transforme a sua Marca.</h2>
+        <p class="subtitle" style="margin-top: 20px;">O próximo caso de sucesso pode ser o seu.</p>
+        <div style="margin-top: 60px;">
+            <p style="font-weight: 800; color: #022c22; font-size: 24px;">cdwebstudios.contact@gmail.com</p>
+            <p style="letter-spacing: 5px; text-transform: uppercase;">Porto, Portugal</p>
+        </div>
+        <div style="margin-top: 40px; font-size: 14px; color: #94a3b8; text-transform: uppercase;">© 2026 C&D Web Studios. Reservados todos os direitos.</div>
+    </div>
+</div>
+
+</body>
+</html>

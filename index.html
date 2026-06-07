@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&D Web Studios | Design Digital Premium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>Utilizamos cookies para garantir a melhor experiência no nosso site. Ao continuar a navegar, está a aceitar a nossa política de privacidade.</p>
+        <div class="cookie-buttons">
+            <button onclick="acceptCookies()" class="cookie-btn accept">Aceitar</button>
+            <button onclick="rejectCookies()" class="cookie-btn reject">Recusar</button>
+        </div>
+    </div>
+</div>
+
+<body>
+    
+<nav class="navbar">
+    <div class="logo">C&D<span class="highlight">.</span></div>
+    <div class="nav-links">
+        <a href="#servicos">Especialidades</a>
+        <a href="#portfolio">Portfólio</a>
+    </div>
+
+    <div class="nav-actions">
+        <a href="#contacto" class="nav-btn">Pedir orçamento</a>
+
+        <div class="lang-selector">
+            <select id="language-select" onchange="changeLanguage()">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section">
+    <div class="hero-text">
+        <h1>Presença Digital desenhada para <span class="text-emerald">liderar</span></h1>
+        <p>Construímos plataformas web exclusivas, com soluções digitais feitas sob medida, focadas na conversão e num design moderno.</p>
+        <a href="https://wa.me/message/INP7VLAFMV6QG1" class="cta-btn">Iniciar Projeto</a>
+    </div>
+</header>
+
+<section id="servicos" class="services-section">
+    <h2>As Nossas Especialidades</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Alojamento & Turismo</h3>
+            <p>Criamos sites imersivos para hotéis boutique e alojamentos locais, com galerias de alta qualidade e sistemas de reserva direta para atrair hóspedes de qualquer parte do mundo.</p>
+        </div>
+        <div class="service-card">
+            <h3>Plataformas Académicas</h3>
+            <p>Portais seguros e intuitivos para instituições e centros de estudos. Criamos soluções à medida para recolha de dados, inquéritos online e publicação de projetos,aximizando a organização e a privacidade exigidas.</p>
+        </div>
+        <div class="service-card">
+            <h3>Restauração & Retalho</h3>
+            <p>Menus digitais elegantes e montras virtuais que convertem visitantes em clientes. Quer venda pratos de assinatura ou produtos exclusivos, criamos a montra perfeita para a sua marca.</p>
+        </div>
+        <div class="service-card">
+            <h3>Escritórios & Consultoria</h3>
+            <p>Sites institucionais de alta segurança e sobriedade para escritórios de advogados, consultores e clínicas. Transmita credibilidade e autoridade desde o primeiro clique, com áreas reservadas e formulários seguros.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio-section">
+    <h2>Trabalhos Recentes</h2>
+    <p class="portfolio-subtitle">Explore alguns dos projetos que desenvolvemos com foco em conversão e design.</p>
+    
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background-color: #f1f5f9; border: 1px solid #e2e8f0;">
+                <span class="placeholder-text" style="color: #0f172a;">The Shadows Project</span>
+            </div>
+            <div class="portfolio-info">
+                <h4>Plataforma Interativa</h4>
+                <p>Design de interface imersiva com sistema flutuante de interação e componentes dinâmicos para utilizadores.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background-color: #f1f5f9; border: 1px solid #e2e8f0;">
+                <span class="placeholder-text" style="color: #0f172a;">Menu Digital "O Forno"</span>
+            </div>
+            <div class="portfolio-info">
+                <h4>Restauração de Assinatura</h4>
+                <p>Montra digital responsiva para um restaurante, com foco na fotografia gastronómica e facilidade de leitura.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background-color: #022c22; display: flex; align-items: center; justify-content: center; height: 250px; border-radius: 8px;">
+                <span style="color: #ffffff; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 2px;">SIA BOUTIQUE</span>
+            </div>
+            
+            <div class="portfolio-info">
+                <h4>E-commerce & Moda</h4>
+                <p>Plataforma de vendas online de vestuário de luxo, desenvolvida com foco em conversão, experiência mobile-first e design editorial.</p>
+                
+                <a href="case-study-sia.html" target="_blank" style="display: inline-block; margin-top: 15px; padding: 10px 24px; background-color: #022c22; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-radius: 6px; transition: opacity 0.2s;">
+                    Ver Estudo de Caso &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testemunhos" class="testimonials-section">
+    <h2>A Confiança dos Nossos Clientes</h2>
+    <p class="testimonials-subtitle">O impacto do nosso trabalho medido por quem mais importa.</p>
+    
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="feedback">"A C&D transformou por completo a nossa presença digital. O sistema de reservas direto que implementaram aumentou a nossa margem de lucro em semanas."</p>
+            <div class="client-info">
+                <h4>Gestão Alojamento Local</h4>
+                <span>Cliente Premium</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="feedback">"Precisávamos de um portal para recolha de dados altamente seguro e organizado. A plataforma entregue superou todas as expectativas de rigor e privacidade."</p>
+            <div class="client-info">
+                <h4>Departamento de Investigação</h4>
+                <span>Cliente Académico</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="contact-section">
+    <h2>Agende uma Consultoria de Projeto</h2>
+    <p>Descreva-nos o seu projeto e receba uma proposta desenhada à sua medida.</p>
+    
+    <form class="contact-form">
+        <input type="text" placeholder="O seu nome ou empresa" required>
+        <input type="email" placeholder="O seu endereço de email" required>
+        <select required>
+            <option value="" disabled selected>Qual é a sua área de negócio?</option>
+            <option value="alojamento">Alojamento & Turismo</option>
+            <option value="academico">Academia & Investigação</option>
+            <option value="restauracao">Restauração & Retalho</option>
+            <option value="corporativo">Serviços Corporativos</option>
+            <option value="E-commerce">E-commerce & moda</option>
+            <option value="outro">Outro</option>
+        </select>
+        <textarea placeholder="Fale-nos um pouco sobre o que precisa..." rows="5" required></textarea>
+        <button type="submit" class="cta-btn">Pedir Orçamento Gratuito</button>
+    </form>
+</section>
+
+<section id="processo" class="process-section">
+    <h2>A Nossa Metodologia</h2>
+    <p class="process-subtitle">Do conceito inicial ao lançamento, um processo transparente e focado no seu sucesso.</p>
+    
+    <div class="process-grid">
+        <div class="process-step">
+            <div class="step-number">01</div>
+            <h4>Consultoria & Estratégia</h4>
+            <p>Tudo começa com uma análise profunda do seu negócio. Identificamos os seus desafios, estudamos o seu público-alvo e desenhamos a estrutura ideal para maximizar os resultados.</p>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">02</div>
+            <h4>Design & Desenvolvimento</h4>
+            <p>Transformamos a estratégia numa experiência visual limpa. Criamos um design premium e programamos a sua plataforma com código limpo, garantindo rapidez e segurança.</p>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">03</div>
+            <h4>Lançamento & Evolução</h4>
+            <p>Testamos cada detalhe antes de colocar o site no ar. Após o lançamento, oferecemos suporte contínuo e manutenção técnica para que o seu projeto digital esteja sempre atualizado.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="faq-section">
+    <h2>Perguntas Frequentes</h2>
+    <p class="faq-subtitle">Tudo o que precisa de saber antes de iniciarmos o seu projeto.</p>
+    
+    <div class="faq-container">
+        <details class="faq-item">
+            <summary>Quanto tempo demora a desenvolver um website?</summary>
+            <div class="faq-content">
+                <p>O tempo de desenvolvimento varia consoante a complexidade. Projetos institucionais e menus digitais levam entre 2 a 3 semanas. Plataformas complexas ou portais de pesquisa podem exigir 4 a 6 semanas para garantir que todos os testes são rigorosamente cumpridos.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>A C&D garante a segurança e privacidade dos dados no meu site?</summary>
+            <div class="faq-content">
+                <p>Absolutamente. Desenhamos arquiteturas com certificados de encriptação, rigor nos acessos e em total conformidade legal com a proteção de dados (RGPD), vital para a confiança dos seus utilizadores.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Oferecem serviços de manutenção após o lançamento?</summary>
+            <div class="faq-content">
+                <p>Sim. Disponibilizamos planos de manutenção contínua para garantir que o seu site está sempre rápido, atualizado e protegido contra novas ameaças, para que se possa focar apenas no seu negócio.</p>
+            </div>
+        </details>
+    </div>
+</section>
+
+<a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="whatsapp-float">
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFF" d="M12.012 2c-5.508 0-9.984 4.464-9.984 9.972 0 1.752.456 3.456 1.32 4.956L2 22l5.256-1.38c1.452.792 3.084 1.212 4.752 1.212 5.508 0 9.984-4.464 9.984-9.972 0-5.508-4.476-9.86-9.98-9.86zm6.156 14.124c-.252.708-1.464 1.308-2.016 1.368-.492.048-1.128.084-3.216-.792-2.664-1.116-4.38-3.828-4.512-4c-.132-.18-1.056-1.404-1.056-2.676 0-1.272.66-1.896.888-2.148.228-.252.492-.312.66-.312.168 0 .336.012.48.012.156 0 .36-.06.564.432.204.504.708 1.728.768 1.848.06.12.096.264.012.432-.084.168-.18.276-.36.48-.18.204-.384.456-.552.612-.18.168-.372.348-.156.72.216.372.96 1.584 2.064 2.568 1.416 1.26 2.616 1.656 2.988 1.848.372.18.588.156.72-.012.132-.168.564-.66.72-.888.156-.228.312-.18.528-.096.216.084 1.368.648 1.608.768.24.12.396.18.456.288.06.096.06.576-.192 1.284z"/>
+    </svg>
+</a>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3>C&D<span class="highlight">.</span> Web Studios</h3>
+            <p class="footer-tagline">Design Digital Premium</p>  
+        </div>
+        
+        <div class="footer-links">
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="termos.html">Termos e Condições</a>
+            <a href="cookies.html">Política de Cookies</a>
+        </div> 
+        
+        <div class="footer-bottom">
+            <p class="footer-email">Contacto: <a href="mailto:cdwebstudios.contact@gmail.com">cdwebstudios.contact@gmail.com</a></p>
+            <p class="footer-copy">&copy; 2026 C&D Web Studios. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
