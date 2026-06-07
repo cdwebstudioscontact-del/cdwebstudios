@@ -238,6 +238,18 @@ function changeLanguage() {
     document.querySelector(".cookie-content p").textContent = translations[lang].cookie_text;
     document.querySelector(".cookie-btn.accept").textContent = translations[lang].cookie_accept;
     document.querySelector(".cookie-btn.reject").textContent = translations[lang].cookie_reject;
+
+    const fLinks = document.querySelectorAll(".footer-links a");
+    if (lang === 'en') {
+        fLinks[0].href = 'privacy.html';
+        fLinks[1].href = 'terms.html';
+        fLinks[2].href = 'cookie-policy.html';
+    } else {
+        fLinks[0].href = 'privacidade.html';
+        fLinks[1].href = 'termos.html';
+        fLinks[2].href = 'cookies.html';
+    }
+
 }
 
 window.onload = function() {
