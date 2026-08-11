@@ -253,16 +253,18 @@ function changeLanguage() {
 }
 
 window.onload = function() {
-    if (!localStorage.getItem("cookiesAccepted")) {
+    if (!localStorage.getItem("cookiesRespondidos")) {
         document.getElementById("cookie-banner").classList.add("show");
     }
 };
 
 function acceptCookies() {
-    localStorage.setItem("cookiesAccepted", "true");
+    localStorage.setItem("cookiesRespondidos", "aceite");
     document.getElementById("cookie-banner").classList.remove("show");
 }
 
 function rejectCookies() {
+    
+    localStorage.setItem("cookiesRespondidos", "recusado");
     document.getElementById("cookie-banner").classList.remove("show");
 }
