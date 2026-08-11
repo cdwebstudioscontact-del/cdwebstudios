@@ -6,6 +6,8 @@
     <title>C&D Web Studios | Design Digital Premium</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    
 <div id="cookie-banner" class="cookie-banner">
     <div class="cookie-content">
         <p>Utilizamos cookies para garantir a melhor experiência no nosso site. Ao continuar a navegar, está a aceitar a nossa política de privacidade.</p>
@@ -16,30 +18,16 @@
     </div>
 </div>
 
-<body>
-    
 <nav class="navbar">
     <div class="logo">C&D<span class="highlight">.</span></div>
     <div class="nav-links">
         <a href="#servicos">Especialidades</a>
         <a href="#portfolio">Portfólio</a>
     </div>
-<div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 mb-6 shadow-lg hover:border-emerald-500/50 transition-all duration-300">
-  <div class="flex items-center gap-3 mb-4">
-    <span class="text-2xl">🥗</span>
-    <h3 class="text-xl font-extrabold text-white">TERRA | Clean Kitchen</h3>
-  </div>
-  <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-    Ecossistema interativo desenhado para marcas de nutrição funcional e bem-estar. Inclui galeria dinâmica e cálculo de macros em tempo real.
-  </p>
-  
-  <a href="./projetos/terra-clean/index.html" class="inline-flex items-center justify-center w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-6 rounded-xl transition-all">
-    Explorar Demonstração ➔
-  </a>
-</div>
 
     <div class="nav-actions">
-        <a href="#contacto" class="nav-btn">Pedir orçamento</a>
+        <!-- O botão agora vai direto para o WhatsApp em vez de descer a página -->
+        <a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="nav-btn">Pedir orçamento</a>
 
         <div class="lang-selector">
             <select id="language-select" onchange="changeLanguage()">
@@ -52,9 +40,9 @@
 
 <header class="hero-section">
     <div class="hero-text">
-        <h1>Presença Digital desenhada para <span class="text-emerald">liderar</span></h1>
+        <h1>Presença Digital desenhada para <span class="highlight" style="color: #10b981;">liderar</span></h1>
         <p>Construímos plataformas web exclusivas, com soluções digitais feitas sob medida, focadas na conversão e num design moderno.</p>
-        <a href="https://wa.me/message/INP7VLAFMV6QG1" class="cta-btn">Iniciar Projeto</a>
+        <a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="cta-btn">Iniciar Projeto</a>
     </div>
 </header>
 
@@ -67,7 +55,7 @@
         </div>
         <div class="service-card">
             <h3>Plataformas Académicas</h3>
-            <p>Portais seguros e intuitivos para instituições e centros de estudos. Criamos soluções à medida para recolha de dados, inquéritos online e publicação de projetos,aximizando a organização e a privacidade exigidas.</p>
+            <p>Portais seguros e intuitivos para instituições e centros de estudos. Criamos soluções à medida para recolha de dados, inquéritos online e publicação de projetos, maximizando a organização e a privacidade exigidas.</p>
         </div>
         <div class="service-card">
             <h3>Restauração & Retalho</h3>
@@ -109,13 +97,25 @@
             <div class="portfolio-image" style="background-color: #022c22; display: flex; align-items: center; justify-content: center; height: 250px; border-radius: 8px;">
                 <span style="color: #ffffff; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 2px;">SIA BOUTIQUE</span>
             </div>
-            
             <div class="portfolio-info">
                 <h4>E-commerce & Moda</h4>
                 <p>Plataforma de vendas online de vestuário de luxo, desenvolvida com foco em conversão, experiência mobile-first e design editorial.</p>
-                
                 <a href="case-study-sia.html" target="_blank" style="display: inline-block; margin-top: 15px; padding: 10px 24px; background-color: #022c22; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-radius: 6px; transition: opacity 0.2s;">
                     Ver Estudo de Caso &rarr;
+                </a>
+            </div>
+        </div>
+
+        <!-- O PROJETO TERRA FOI MOVIDO PARA AQUI E ADAPTADO AO TEU DESIGN -->
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background-color: #064e3b; display: flex; align-items: center; justify-content: center; height: 250px; border-radius: 8px;">
+                <span style="color: #10b981; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 2px;">TERRA <span style="color: #ffffff; font-weight: 300;">CLEAN</span></span>
+            </div>
+            <div class="portfolio-info">
+                <h4>TERRA | Clean Kitchen</h4>
+                <p>Ecossistema interativo desenhado para marcas de nutrição funcional e bem-estar. Inclui galeria dinâmica e cálculo de macros em tempo real.</p>
+                <a href="./projetos/terra-clean/index.html" target="_blank" style="display: inline-block; margin-top: 15px; padding: 10px 24px; background-color: #064e3b; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-radius: 6px; transition: opacity 0.2s;">
+                    Explorar Demonstração &rarr;
                 </a>
             </div>
         </div>
@@ -151,10 +151,10 @@
     <h2>Agende uma Consultoria de Projeto</h2>
     <p>Descreva-nos o seu projeto e receba uma proposta desenhada à sua medida.</p>
     
-    <form class="contact-form">
-        <input type="text" placeholder="O seu nome ou empresa" required>
-        <input type="email" placeholder="O seu endereço de email" required>
-        <select required>
+    <div class="contact-form">
+        <input type="text" placeholder="O seu nome ou empresa" class="input-field">
+        <input type="email" placeholder="O seu endereço de email" class="input-field">
+        <select class="input-field">
             <option value="" disabled selected>Qual é a sua área de negócio?</option>
             <option value="alojamento">Alojamento & Turismo</option>
             <option value="academico">Academia & Investigação</option>
@@ -163,9 +163,13 @@
             <option value="E-commerce">E-commerce & moda</option>
             <option value="outro">Outro</option>
         </select>
-        <textarea placeholder="Fale-nos um pouco sobre o que precisa..." rows="5" required></textarea>
-        <button type="submit" class="cta-btn">Pedir Orçamento Gratuito</button>
-    </form>
+        <textarea placeholder="Fale-nos um pouco sobre o que precisa..." rows="5" class="input-field"></textarea>
+        
+        <!-- O botão do formulário agora encaminha direto para o WhatsApp -->
+        <a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="cta-btn" style="display: block; text-align: center; text-decoration: none; margin-top: 15px;">
+            Pedir Orçamento via WhatsApp 💬
+        </a>
+    </div>
 </section>
 
 <section id="processo" class="process-section">
