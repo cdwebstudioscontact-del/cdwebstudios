@@ -114,7 +114,7 @@ const translations = {
         form_opt5: 'E-commerce & fashion',
         form_opt6: 'Other',
         form_msg: 'Tell us a bit about what you need...',
-        form_btn: 'Request Quote via WhatsApp 💬',
+        form_btn: 'Request Quote via WhatsApp',
         process_title: 'Our Methodology',
         process_sub: 'From the initial concept to launch, a transparent process focused on your success.',
         step1_title: 'Consulting & Strategy',
