@@ -44,7 +44,7 @@ const translations = {
         form_opt5: 'E-commerce & moda',
         form_opt6: 'Outro',
         form_msg: 'Fale-nos um pouco sobre o que precisa...',
-        form_btn: 'Pedir Orçamento via WhatsApp 💬',
+        form_btn: 'Pedir Orçamento via WhatsApp',
         process_title: 'A Nossa Metodologia',
         process_sub: 'Do conceito inicial ao lançamento, um processo transparente e focado no seu sucesso.',
         step1_title: 'Consultoria & Estratégia',
