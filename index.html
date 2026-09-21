@@ -5,43 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C&D Web Studios | Design Digital Premium</title>
     <link rel="icon" href="/logo.cd.jpeg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-<div id="cookie-banner" class="cookie-banner">
-    <div class="cookie-content">
-        <p>Utilizamos cookies para garantir a melhor experiência no nosso site. Ao continuar a navegar, está a aceitar a nossa política de privacidade.</p>
-        <div class="cookie-buttons">
-            <button onclick="acceptCookies()" class="cookie-btn accept">Aceitar</button>
-            <button onclick="rejectCookies()" class="cookie-btn reject">Recusar</button>
-        </div>
-    </div>
-</div>
 
-<nav class="navbar">
-    <div class="logo">C&D<span class="highlight">.</span></div>
-    <div class="nav-links">
-        <a href="#servicos">Especialidades</a>
-        <a href="#portfolio">Portfólio</a>
-    </div>
-
-    <div class="nav-actions">
-        <!-- O botão agora vai direto para o WhatsApp em vez de descer a página -->
-        <a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="nav-btn">Pedir orçamento</a>
-
-        <div class="lang-selector">
-            <select id="language-select" onchange="changeLanguage()">
-                <option value="pt">PT</option>
-                <option value="en">EN</option>
-            </select>
-        </div>
+<nav class="navbar-clean">
+    <div class="logo">C&D<span class="dot">.</span></div>
+    
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 </nav>
 
+
+<div id="mobile-menu" class="mobile-overlay">
+    <div class="close-btn" onclick="toggleMenu()">✕</div>
+    
+    <div class="lang-switch-menu">
+    <span id="lang-pt" class="lang-active" onclick="changeLang('pt')">PT</span> 
+    <span class="separator">|</span> 
+    <span id="lang-en" class="lang-inactive" onclick="changeLang('en')">EN</span>
+</div>
+    
+    <a href="#servicos" onclick="toggleMenu()">Especialidades</a>
+    <a href="#portfolio" onclick="toggleMenu()">Portfólio</a>
+    <a href="#processo" onclick="toggleMenu()">Metodologia</a>
+    <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+    
+    <a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="btn-solid-menu">Pedir Orçamento</a>
+</div>
+
 <header class="hero-section">
     <div class="hero-text">
-        <h1>Presença Digital desenhada para <span class="highlight" style="color: #10b981;">liderar</span></h1>
+        <h1>Presença Digital desenhada para <span class="highlight" style="color: #26C2A3;">liderar</span></h1>
         <p>Construímos plataformas web exclusivas, com soluções digitais feitas sob medida, focadas na conversão e num design moderno.</p>
         <a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="cta-btn">Iniciar Projeto</a>
     </div>
@@ -107,7 +107,6 @@
             </div>
         </div>
 
-        <!-- O PROJETO TERRA FOI MOVIDO PARA AQUI E ADAPTADO AO TEU DESIGN -->
         <div class="portfolio-item">
             <div class="portfolio-image" style="background-color: #064e3b; display: flex; align-items: center; justify-content: center; height: 250px; border-radius: 8px;">
                 <span style="color: #10b981; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 2px;">TERRA <span style="color: #ffffff; font-weight: 300;">CLEAN</span></span>
@@ -166,9 +165,8 @@
         </select>
         <textarea placeholder="Fale-nos um pouco sobre o que precisa..." rows="5" class="input-field"></textarea>
         
-        <!-- O botão do formulário agora encaminha direto para o WhatsApp -->
         <a href="https://wa.me/message/INP7VLAFMV6QG1" target="_blank" class="cta-btn" style="display: block; text-align: center; text-decoration: none; margin-top: 15px;">
-            Pedir Orçamento via WhatsApp 💬
+            Pedir Orçamento via WhatsApp 
         </a>
     </div>
 </section>
@@ -235,9 +233,9 @@
 <footer>
     <div class="footer-container">
         <div class="footer-brand">
-            <h3>C&D<span class="highlight">.</span> Web Studios</h3>
-            <p class="footer-tagline">Design Digital Premium</p>  
-        </div>
+    <h3>C&D Web Studios<span class="footer-dot">.</span></h3>
+    <p class="footer-tagline">Design Digital Premium</p>  
+</di>
         
         <div class="footer-links">
             <a href="privacidade.html">Política de Privacidade</a>
@@ -251,6 +249,8 @@
         </div>
     </div>
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
