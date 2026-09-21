@@ -4,83 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termos e Condições de Serviço | C&D Web Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-            line-height: 1.8;
-            color: #1e293b;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 50px 10%;
-        }
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-        }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            margin-bottom: 2.5rem;
-            color: #10b981;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-        }
-        .back-link:hover {
-            color: #059669;
-        }
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            color: #0f172a;
-            font-size: 2.2rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.5px;
-        }
-        .meta-date {
-            color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 3rem;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 1.5rem;
-        }
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #0f172a;
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        p, li {
-            color: #334155;
-            font-size: 1.05rem;
-            text-align: justify;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        .legal-notice {
-            background-color: #f8fafc;
-            border-left: 4px solid #10b981;
-            padding: 1.5rem;
-            margin-top: 3rem;
-            border-radius: 0 8px 8px 0;
-        }
-        .legal-notice p {
-            margin: 0;
-            font-size: 0.95rem;
-            color: #475569;
-        }
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; color: #1e293b; background-color: #ffffff; margin: 0; padding: 0 0 50px 0; }
+        .legal-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; margin-bottom: 40px; }
+        .logo-mini { font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 800; color: #26C2A3; text-decoration: none; }
+        .logo-mini .dot { color: #05081A; }
+        .lang-switch a { font-weight: 700; text-decoration: none; font-size: 14px; transition: color 0.3s; }
+        .lang-active { color: #26C2A3; }
+        .lang-inactive { color: #94a3b8; }
+        .lang-inactive:hover { color: #05081A; }
+        .separator { color: #cbd5e1; margin: 0 10px; }
+        .container { max-width: 850px; margin: 0 auto; padding: 0 10%; }
+        .back-link { display: inline-flex; align-items: center; margin-bottom: 2.5rem; color: #26C2A3; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.2s ease; }
+        .back-link:hover { color: #05081A; }
+        h1 { font-family: 'Montserrat', sans-serif; color: #05081A; font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+        .meta-date { color: #64748b; font-size: 0.95rem; margin-bottom: 3rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem; }
+        h2 { font-family: 'Montserrat', sans-serif; color: #05081A; font-size: 1.3rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        p, li { color: #334155; font-size: 1.05rem; text-align: justify; }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+        .legal-notice { background-color: #f8fafc; border-left: 4px solid #26C2A3; padding: 1.5rem; margin-top: 3rem; border-radius: 0 8px 8px 0; }
+        .legal-notice p { margin: 0; font-size: 0.95rem; color: #475569; }
     </style>
 </head>
 <body>
+
+<div class="legal-header">
+    <a href="index.html" class="logo-mini">C&D<span class="dot">.</span></a>
+    <div class="lang-switch">
+        <span class="lang-active">PT</span> <span class="separator">|</span> <a href="terms.html" class="lang-inactive">EN</a>
+    </div>
+</div>
 
 <div class="container">
     <a href="index.html" class="back-link">&larr; Voltar à Página Principal</a>
@@ -88,31 +43,38 @@
     <h1>CONTRATO DE TERMOS E CONDIÇÕES DE UTILIZAÇÃO</h1>
     <div class="meta-date">CONTEXTO REGULAMENTAR E JURÍDICO | ÚLTIMA REVISÃO: JUNHO DE 2026</div>
     
-    <p>O presente documento estabelece os termos contratuais e as condições gerais de utilização a que se submetem reciprocamente a entidade prestadora de serviços digitais <strong>C&D Web Studios</strong> e qualquer pessoa singular ou coletiva (adiante designada por "Utilizador") que aceda, navegue ou utilize as funcionalidades desta plataforma informática proprietária.</p>
+    <p>O presente documento estabelece os termos contratuais e as condições gerais de utilização a que se submetem reciprocamente a entidade prestadora de serviços digitais <strong>C&D Web Studios</strong> e qualquer pessoa singular ou coletiva (adiante designada por "Utilizador" ou "Cliente") que aceda, navegue ou adjudique projetos através desta plataforma.</p>
     
     <h2>Artigo 1.º - Objeto e Escopo Aplicacional</h2>
     <p>1. A C&D Web Studios disponibiliza através deste canal digital informações detalhadas sobre a sua estrutura organizacional, metodologias proprietárias de desenvolvimento, especialidades técnicas, consultoria de projetos e histórico de portefólio comercial.</p>
     <p>2. A navegação no website, bem como a submissão de dados nos formulários de contacto, pressupõe a aceitação integral, vinculativa e sem reservas de todas as cláusulas estipuladas no presente instrumento jurídico.</p>
     
     <h2>Artigo 2.º - Direitos de Propriedade Intelectual e Industrial</h2>
-    <p>1. Toda a arquitetura lógica e visual da plataforma — incluindo, mas não se limitando a: marcas registadas, logótipos corporativos, criações textuais, bases de dados, maquetes gráficas (mockups), código-fonte, scripts e folhas de estilo (CSS) — constitui propriedade intelectual exclusiva da C&D Web Studios ou encontra-se devidamente licenciada à mesma.</p>
-    <p>2. É expressamente vedada a reprodução total ou parcial, a extração de dados (data mining), a clonagem estrutural, a engenharia inversa ou a exploração comercial não autorizada de qualquer elemento deste ecossistema digital, sob pena de responsabilidade civil e criminal nos termos da legislação em vigor protetora dos Direitos de Autor e Direitos Conexos.</p>
+    <p>1. Toda a arquitetura lógica e visual da plataforma base — incluindo, mas não se limitando a: logótipos corporativos, criações textuais, bases de dados, código-fonte, scripts e folhas de estilo (CSS) — constitui propriedade intelectual exclusiva da C&D Web Studios.</p>
+    <p>2. É expressamente vedada a clonagem estrutural, engenharia inversa ou a exploração comercial não autorizada de qualquer elemento deste ecossistema, sob pena de responsabilidade civil e criminal.</p>
     
     <h2>Artigo 3.º - Condições de Acesso e Segurança Tecnológica</h2>
-    <p>1. O Utilizador obriga-se a adotar uma conduta de estrito rigor ético e legal durante a utilização do website.</p>
-    <p>2. É terminantemente proibida qualquer ação que vise, direta ou indiretamente:</p>
-    <ul>
-        <li>Injetar rotinas de código malicioso (malware, ransomware, scripts de SQL Injection);</li>
-        <li>Comprometer a integridade dos servidores ou perturbar a estabilidade técnica da plataforma;</li>
-        <li>Utilizar os mecanismos de comunicação para a transmissão de comunicações em massa não consentidas (Spamming) ou recolha ilícita de dados de terceiros.</li>
-    </ul>
+    <p>1. O Utilizador obriga-se a adotar uma conduta ética e legal. É terminantemente proibida a injeção de código malicioso (malware, SQL Injection), o comprometimento da estabilidade dos servidores ou a utilização dos nossos canais para o envio de Spam (Spamming).</p>
     
-    <h2>Artigo 4.º - Exclusão de Responsabilidade e Garantias</h2>
-    <p>1. A C&D Web Studios assegura a implementação de medidas técnicas de segurança adequadas à proteção da integridade da plataforma. Contudo, em virtude da natureza volátil dos ambientes digitais, não se responsabiliza por prejuízos decorrentes de interrupções de telecomunicações, intrusões ilegítimas de terceiros à revelia dos sistemas de segurança, ou incompatibilidades técnicas nos terminais do Utilizador.</p>
-    <p>2. Todas as propostas e estimativas financeiras facultadas através da plataforma revestem caráter meramente informativo, carecendo sempre de validação contratual subsequente através de orçamento formalizado pelas partes.</p>
+    <h2>Artigo 4.º - Exclusão de Responsabilidade e Propostas</h2>
+    <p>1. Todas as estimativas financeiras facultadas através de contacto inicial na plataforma revestem caráter meramente informativo. Apenas um orçamento formalizado e assinado pelas partes constitui vinculação contratual.</p>
     
-    <h2>Artigo 5.º - Foro Competente e Disposições Finais</h2>
-    <p>1. Para a resolução de qualquer litígio emergente da interpretação ou execução do presente contrato, as partes elegem expressamente a jurisdição dos tribunais da Comarca de competência territorial da sede da prestadora, com expressa renúncia a qualquer outro.</p>
+    <h2>Artigo 5.º - Transmissão de Propriedade e Código-Fonte</h2>
+    <p>1. O desenvolvimento de plataformas digitais, websites ou aplicações web pela C&D Web Studios está sujeito a reserva de propriedade.</p>
+    <p>2. O Cliente adquire os direitos de utilização e a propriedade total sobre o código-fonte, design final e infraestrutura do seu projeto única e exclusivamente após a liquidação integral (100%) do valor adjudicado. Em caso de incumprimento financeiro, a C&D Web Studios reserva-se o direito de suspender ou reter o acesso à plataforma do Cliente.</p>
+
+    <h2>Artigo 6.º - Adjudicação, Pagamentos e Cancelamentos</h2>
+    <p>1. O início de qualquer projeto de desenvolvimento requer a adjudicação formal do orçamento e o pagamento de uma prestação inicial (Sinal) correspondente a 50% do valor total do projeto estipulado na proposta comercial.</p>
+    <p>2. Os restantes 50% do valor do projeto deverão ser liquidados integralmente aquando da conclusão técnica do mesmo, e como condição estrita para a transferência da propriedade e lançamento oficial do website online (Go-Live).</p>
+    <p>3. Em caso de desistência unilateral ou abandono do projeto por parte do Cliente após o pagamento da prestação inicial e início dos trabalhos, <strong>o valor do sinal (50%) não será reembolsado</strong>, destinando-se a cobrir os custos de consultoria, design estrutural e horas de programação já executadas pela equipa da C&D Web Studios.</p>
+
+    <h2>Artigo 7.º - Garantia Técnica (30 Dias) e Manutenção</h2>
+    <p>1. Após a entrega e lançamento oficial do projeto online, a C&D Web Studios assegura um período de garantia técnica gratuita de 30 (trinta) dias úteis.</p>
+    <p>2. Esta garantia é exclusiva para a identificação, despiste e correção de eventuais anomalias técnicas, erros de código (bugs) ou falhas estruturais cuja origem advenha exclusivamente do trabalho desenvolvido pela agência.</p>
+    <p>3. A referida garantia técnica não cobre nem inclui: alterações estéticas ao design aprovado, reformulação de textos ou troca de imagens, adição de novas páginas/funcionalidades, ou danos causados por manuseamento indevido do cliente no sistema. Quaisquer aditamentos ao escopo original exigem a contratualização de um plano de manutenção ou orçamentação específica.</p>
+
+    <h2>Artigo 8.º - Foro Competente e Disposições Finais</h2>
+    <p>1. Para a resolução de qualquer litígio emergente da interpretação ou execução do presente contrato, as partes elegem expressamente a jurisdição dos tribunais da Comarca do Porto, com expressa renúncia a qualquer outro.</p>
     
     <div class="legal-notice">
         <p><strong>Canais de Esclarecimento Oficiais:</strong> Para efeitos de notificações extrajudiciais, auditorias legais ou esclarecimento de dúvidas regulamentares, a C&D Web Studios disponibiliza o canal de comunicação eletrónica centralizado: <strong>cdwebstudios.contact@gmail.com</strong>.</p>
