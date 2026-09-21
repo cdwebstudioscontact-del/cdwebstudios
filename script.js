@@ -2,8 +2,8 @@ const translations = {
     pt: {
         nav_specs: 'Especialidades',
         nav_portfolio: 'Portfólio',
-        nav_cta: 'Pedir orçamento',
-        hero_title: 'Presença Digital desenhada para <span class="text-emerald">liderar</span>',
+        nav_cta: 'Orçamento',
+        hero_title: 'Presença Digital desenhada para <span class="highlight" style="color: #26C2A3;">liderar</span>',
         hero_desc: 'Construímos plataformas web exclusivas, com soluções digitais feitas sob medida, focadas na conversão e num design moderno.',
         hero_cta: 'Iniciar Projeto',
         specs_title: 'As Nossas Especialidades',
@@ -18,7 +18,7 @@ const translations = {
         portfolio_title: 'Trabalhos Recentes',
         portfolio_sub: 'Explore alguns dos projetos que desenvolvemos com foco em conversão e design.',
         port1_title: 'Plataforma Interativa',
-        port1_desc: 'Design de interface imersiva com system flutuante de interação e componentes dinâmicos para utilizadores.',
+        port1_desc: 'Design de interface imersiva com sistema flutuante de interação e componentes dinâmicos para utilizadores.',
         port2_title: 'Restauração de Assinatura',
         port2_desc: 'Montra digital responsiva para um restaurante, com foco na fotografia gastronómica e facilidade de leitura.',
         port3_title: 'E-commerce & Moda',
@@ -44,7 +44,7 @@ const translations = {
         form_opt5: 'E-commerce & moda',
         form_opt6: 'Outro',
         form_msg: 'Fale-nos um pouco sobre o que precisa...',
-        form_btn: 'Pedir Orçamento Gratuito',
+        form_btn: 'Pedir Orçamento via WhatsApp 💬',
         process_title: 'A Nossa Metodologia',
         process_sub: 'Do conceito inicial ao lançamento, um processo transparente e focado no seu sucesso.',
         step1_title: 'Consultoria & Estratégia',
@@ -60,13 +60,11 @@ const translations = {
         faq2_q: 'A C&D garante a segurança e privacidade dos dados no meu site?',
         faq2_a: 'Absolutamente. Desenhamos arquiteturas com certificados de encriptação, rigor nos acessos e em total conformidade legal com a proteção de dados (RGPD), vital para a confiança dos seus utilizadores.',
         faq3_q: 'Oferecem serviços de manutenção após o lançamento?',
-        faq3_a: 'Sim. Disponibilizamos planos de manutenção contínua para garantir que o seu site está sempre rápido, updated e protegido contra novas ameaças, para que se possa focar apenas no seu negócio.',
+        faq3_a: 'Sim. Disponibilizamos planos de manutenção contínua para garantir que o seu site está sempre rápido, atualizado e protegido contra novas ameaças, para que se possa focar apenas no seu negócio.',
         footer_tag: 'Design Digital Premium',
         footer_priv: 'Política de Privacidade',
         footer_term: 'Termos e Condições',
         footer_cook: 'Política de Cookies',
-        footer_contact: 'Contacto: ',
-        footer_copy: '&copy; 2026 C&D Web Studios. Todos os direitos reservados.',
         cookie_text: 'Utilizamos cookies para garantir a melhor experiência no nosso site. Ao continuar a navegar, está a aceitar a nossa política de privacidade.',
         cookie_accept: 'Aceitar',
         cookie_reject: 'Recusar'
@@ -74,8 +72,8 @@ const translations = {
     en: {
         nav_specs: 'Specialties',
         nav_portfolio: 'Portfolio',
-        nav_cta: 'Get a quote',
-        hero_title: 'Digital Presence designed to <span class="text-emerald">lead</span>',
+        nav_cta: 'Quote',
+        hero_title: 'Digital Presence designed to <span class="highlight" style="color: #26C2A3;">lead</span>',
         hero_desc: 'We build exclusive web platforms, with tailor-made digital solutions, focused on conversion and modern design.',
         hero_cta: 'Start Project',
         specs_title: 'Our Specialties',
@@ -116,7 +114,7 @@ const translations = {
         form_opt5: 'E-commerce & fashion',
         form_opt6: 'Other',
         form_msg: 'Tell us a bit about what you need...',
-        form_btn: 'Request Free Quote',
+        form_btn: 'Request Quote via WhatsApp 💬',
         process_title: 'Our Methodology',
         process_sub: 'From the initial concept to launch, a transparent process focused on your success.',
         step1_title: 'Consulting & Strategy',
@@ -137,134 +135,213 @@ const translations = {
         footer_priv: 'Privacy Policy',
         footer_term: 'Terms and Conditions',
         footer_cook: 'Cookies Policy',
-        footer_contact: 'Contact: ',
-        footer_copy: '&copy; 2026 C&D Web Studios. All rights reserved.',
         cookie_text: 'We use cookies to ensure the best experience on our website. By continuing to browse, you accept our privacy policy.',
         cookie_accept: 'Accept',
         cookie_reject: 'Reject'
     }
 };
 
-function changeLanguage() {
-    const select = document.getElementById("language-select");
-    const lang = select.value;
-    
-    document.querySelector(".nav-links a[href='#servicos']").textContent = translations[lang].nav_specs;
-    document.querySelector(".nav-links a[href='#portfolio']").textContent = translations[lang].nav_portfolio;
-    document.querySelector(".nav-btn").textContent = translations[lang].nav_cta;
-    
-    document.querySelector(".hero-section h1").innerHTML = translations[lang].hero_title;
-    document.querySelector(".hero-text p").textContent = translations[lang].hero_desc;
-    document.querySelector(".hero-section .cta-btn").textContent = translations[lang].hero_cta;
-    
-    document.querySelector(".services-section h2").textContent = translations[lang].specs_title;
-    const serviceCards = document.querySelectorAll(".service-card");
-    serviceCards[0].querySelector("h3").textContent = translations[lang].spec1_title;
-    serviceCards[0].querySelector("p").textContent = translations[lang].spec1_desc;
-    serviceCards[1].querySelector("h3").textContent = translations[lang].spec2_title;
-    serviceCards[1].querySelector("p").textContent = translations[lang].spec2_desc;
-    serviceCards[2].querySelector("h3").textContent = translations[lang].spec3_title;
-    serviceCards[2].querySelector("p").textContent = translations[lang].spec3_desc;
-    serviceCards[3].querySelector("h3").textContent = translations[lang].spec4_title;
-    serviceCards[3].querySelector("p").textContent = translations[lang].spec4_desc;
-    
-    document.querySelector(".portfolio-section h2").textContent = translations[lang].portfolio_title;
-    document.querySelector(".portfolio-subtitle").textContent = translations[lang].portfolio_sub;
-    const portfolioItems = document.querySelectorAll(".portfolio-item");
-    portfolioItems[0].querySelector("h4").textContent = translations[lang].port1_title;
-    portfolioItems[0].querySelector("p").textContent = translations[lang].port1_desc;
-    portfolioItems[1].querySelector("h4").textContent = translations[lang].port2_title;
-    portfolioItems[1].querySelector("p").textContent = translations[lang].port2_desc;
-    portfolioItems[2].querySelector("h4").textContent = translations[lang].port3_title;
-    portfolioItems[2].querySelector("p").textContent = translations[lang].port3_desc;
-    portfolioItems[2].querySelector("a").innerHTML = translations[lang].port3_cta;
-    
-    document.querySelector(".testimonials-section h2").textContent = translations[lang].test_title;
-    document.querySelector(".testimonials-subtitle").textContent = translations[lang].test_sub;
-    const testCards = document.querySelectorAll(".testimonial-card");
-    testCards[0].querySelector(".feedback").textContent = translations[lang].test1_feed;
-    testCards[0].querySelector(".client-info h4").textContent = translations[lang].test1_client;
-    testCards[0].querySelector(".client-info span").textContent = translations[lang].test1_tag;
-    testCards[1].querySelector(".feedback").textContent = translations[lang].test2_feed;
-    testCards[1].querySelector(".client-info h4").textContent = translations[lang].test2_client;
-    testCards[1].querySelector(".client-info span").textContent = translations[lang].test2_tag;
-    
-    document.querySelector(".contact-section h2").textContent = translations[lang].contact_title;
-    document.querySelector(".contact-section p").textContent = translations[lang].contact_sub;
-    const inputs = document.querySelectorAll(".contact-form input");
-    inputs[0].placeholder = translations[lang].form_name;
-    inputs[1].placeholder = translations[lang].form_email;
-    
-    const selectForm = document.querySelector(".contact-form select");
-    selectForm.options[0].textContent = translations[lang].form_select_placeholder;
-    selectForm.options[1].textContent = translations[lang].form_opt1;
-    selectForm.options[2].textContent = translations[lang].form_opt2;
-    selectForm.options[3].textContent = translations[lang].form_opt3;
-    selectForm.options[4].textContent = translations[lang].form_opt4;
-    selectForm.options[5].textContent = translations[lang].form_opt5;
-    selectForm.options[6].textContent = translations[lang].form_opt6;
-    
-    document.querySelector(".contact-form textarea").placeholder = translations[lang].form_msg;
-    document.querySelector(".contact-form button").textContent = translations[lang].form_btn;
-    
-    document.querySelector(".process-section h2").textContent = translations[lang].process_title;
-    document.querySelector(".process-subtitle").textContent = translations[lang].process_sub;
-    const steps = document.querySelectorAll(".process-step");
-    steps[0].querySelector("h4").textContent = translations[lang].step1_title;
-    steps[0].querySelector("p").textContent = translations[lang].step1_desc;
-    steps[1].querySelector("h4").textContent = translations[lang].step2_title;
-    steps[1].querySelector("p").textContent = translations[lang].step2_desc;
-    steps[2].querySelector("h4").textContent = translations[lang].step3_title;
-    steps[2].querySelector("p").textContent = translations[lang].step3_desc;
-    
-    document.querySelector(".faq-section h2").textContent = translations[lang].faq_title;
-    document.querySelector(".faq-subtitle").textContent = translations[lang].faq_sub;
-    const faqItems = document.querySelectorAll(".faq-item");
-    faqItems[0].querySelector("summary").textContent = translations[lang].faq1_q;
-    faqItems[0].querySelector(".faq-content p").textContent = translations[lang].faq1_a;
-    faqItems[1].querySelector("summary").textContent = translations[lang].faq2_q;
-    faqItems[1].querySelector(".faq-content p").textContent = translations[lang].faq2_a;
-    faqItems[2].querySelector("summary").textContent = translations[lang].faq3_q;
-    faqItems[2].querySelector(".faq-content p").textContent = translations[lang].faq3_a;
-    
-    document.querySelector(".footer-tagline").textContent = translations[lang].footer_tag;
-    const footerLinks = document.querySelectorAll(".footer-links a");
-    footerLinks[0].textContent = translations[lang].footer_priv;
-    footerLinks[1].textContent = translations[lang].footer_term;
-    footerLinks[2].textContent = translations[lang].footer_cook;
-    document.querySelector(".footer-email").innerHTML = translations[lang].footer_contact + '<a href="mailto:cdwebstudios.contact@gmail.com">cdwebstudios.contact@gmail.com</a>';
-    document.querySelector(".footer-copy").innerHTML = translations[lang].footer_copy;
+let currentLang = 'pt';
 
-    document.querySelector(".cookie-content p").textContent = translations[lang].cookie_text;
-    document.querySelector(".cookie-btn.accept").textContent = translations[lang].cookie_accept;
-    document.querySelector(".cookie-btn.reject").textContent = translations[lang].cookie_reject;
 
-    const fLinks = document.querySelectorAll(".footer-links a");
-    if (lang === 'en') {
-        fLinks[0].href = 'privacy.html';
-        fLinks[1].href = 'terms.html';
-        fLinks[2].href = 'cookie-policy.html';
-    } else {
-        fLinks[0].href = 'privacidade.html';
-        fLinks[1].href = 'termos.html';
-        fLinks[2].href = 'cookies.html';
-    }
-
+function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('active');
 }
 
-window.onload = function() {
-    if (!localStorage.getItem("cookiesRespondidos")) {
-        document.getElementById("cookie-banner").classList.add("show");
+
+function changeLang(lang) {
+    currentLang = lang;
+    
+   
+    const pt = document.getElementById('lang-pt');
+    const en = document.getElementById('lang-en');
+    
+    if (lang === 'en') {
+        en.classList.add('lang-active');
+        en.classList.remove('lang-inactive');
+        pt.classList.add('lang-inactive');
+        pt.classList.remove('lang-active');
+    } else if (lang === 'pt') {
+        pt.classList.add('lang-active');
+        pt.classList.remove('lang-inactive');
+        en.classList.add('lang-inactive');
+        en.classList.remove('lang-active');
     }
-};
+
+    
+    applyTranslations(lang);
+}
+
+
+function applyTranslations(lang) {
+    const t = translations[lang];
+
+    
+    const menuLinks = document.querySelectorAll("#mobile-menu a:not(.btn-solid-menu)");
+    if (menuLinks.length >= 2) {
+        menuLinks[0].textContent = t.nav_specs;
+        menuLinks[1].textContent = t.nav_portfolio;
+    }
+    
+    const btnSolidMenu = document.querySelector(".btn-solid-menu");
+    if (btnSolidMenu) btnSolidMenu.textContent = t.nav_cta;
+    
+    
+    const heroH1 = document.querySelector(".hero-section h1");
+    if (heroH1) heroH1.innerHTML = t.hero_title;
+    const heroP = document.querySelector(".hero-text p");
+    if (heroP) heroP.textContent = t.hero_desc;
+    const heroCta = document.querySelector(".hero-section .cta-btn");
+    if (heroCta) heroCta.textContent = t.hero_cta;
+    
+    
+    const specsH2 = document.querySelector(".services-section h2");
+    if (specsH2) specsH2.textContent = t.specs_title;
+    
+    const serviceCards = document.querySelectorAll(".service-card");
+    if (serviceCards.length >= 4) {
+        serviceCards[0].querySelector("h3").textContent = t.spec1_title;
+        serviceCards[0].querySelector("p").textContent = t.spec1_desc;
+        serviceCards[1].querySelector("h3").textContent = t.spec2_title;
+        serviceCards[1].querySelector("p").textContent = t.spec2_desc;
+        serviceCards[2].querySelector("h3").textContent = t.spec3_title;
+        serviceCards[2].querySelector("p").textContent = t.spec3_desc;
+        serviceCards[3].querySelector("h3").textContent = t.spec4_title;
+        serviceCards[3].querySelector("p").textContent = t.spec4_desc;
+    }
+    
+    // Atualizar Portfólio
+    const portH2 = document.querySelector(".portfolio-section h2");
+    if (portH2) portH2.textContent = t.portfolio_title;
+    const portSub = document.querySelector(".portfolio-subtitle");
+    if (portSub) portSub.textContent = t.portfolio_sub;
+    
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+    if (portfolioItems.length >= 3) {
+        portfolioItems[0].querySelector("h4").textContent = t.port1_title;
+        portfolioItems[0].querySelector("p").textContent = t.port1_desc;
+        portfolioItems[1].querySelector("h4").textContent = t.port2_title;
+        portfolioItems[1].querySelector("p").textContent = t.port2_desc;
+        portfolioItems[2].querySelector("h4").textContent = t.port3_title;
+        portfolioItems[2].querySelector("p").textContent = t.port3_desc;
+        const port3Link = portfolioItems[2].querySelector("a");
+        if (port3Link) port3Link.innerHTML = t.port3_cta;
+    }
+    
+    
+    const testH2 = document.querySelector(".testimonials-section h2");
+    if (testH2) testH2.textContent = t.test_title;
+    const testSub = document.querySelector(".testimonials-subtitle");
+    if (testSub) testSub.textContent = t.test_sub;
+    
+    const testCards = document.querySelectorAll(".testimonial-card");
+    if (testCards.length >= 2) {
+        testCards[0].querySelector(".feedback").textContent = t.test1_feed;
+        testCards[0].querySelector(".client-info h4").textContent = t.test1_client;
+        testCards[0].querySelector(".client-info span").textContent = t.test1_tag;
+        testCards[1].querySelector(".feedback").textContent = t.test2_feed;
+        testCards[1].querySelector(".client-info h4").textContent = t.test2_client;
+        testCards[1].querySelector(".client-info span").textContent = t.test2_tag;
+    }
+    
+    // Atualizar Contacto / Formulário
+    const contactH2 = document.querySelector(".contact-section h2");
+    if (contactH2) contactH2.textContent = t.contact_title;
+    const contactP = document.querySelector(".contact-section p");
+    if (contactP) contactP.textContent = t.contact_sub;
+    
+    const inputs = document.querySelectorAll(".contact-form input");
+    if (inputs.length >= 2) {
+        inputs[0].placeholder = t.form_name;
+        inputs[1].placeholder = t.form_email;
+    }
+    
+    const selectForm = document.querySelector(".contact-form select");
+    if (selectForm && selectForm.options.length >= 7) {
+        selectForm.options[0].textContent = t.form_select_placeholder;
+        selectForm.options[1].textContent = t.form_opt1;
+        selectForm.options[2].textContent = t.form_opt2;
+        selectForm.options[3].textContent = t.form_opt3;
+        selectForm.options[4].textContent = t.form_opt4;
+        selectForm.options[5].textContent = t.form_opt5;
+        selectForm.options[6].textContent = t.form_opt6;
+    }
+    
+    const textarea = document.querySelector(".contact-form textarea");
+    if (textarea) textarea.placeholder = t.form_msg;
+    
+    const contactBtn = document.querySelector(".contact-form .cta-btn");
+    if (contactBtn) contactBtn.textContent = t.form_btn;
+    
+    // Atualizar Metodologia
+    const processH2 = document.querySelector(".process-section h2");
+    if (processH2) processH2.textContent = t.process_title;
+    const processSub = document.querySelector(".process-subtitle");
+    if (processSub) processSub.textContent = t.process_sub;
+    
+    const steps = document.querySelectorAll(".process-step");
+    if (steps.length >= 3) {
+        steps[0].querySelector("h4").textContent = t.step1_title;
+        steps[0].querySelector("p").textContent = t.step1_desc;
+        steps[1].querySelector("h4").textContent = t.step2_title;
+        steps[1].querySelector("p").textContent = t.step2_desc;
+        steps[2].querySelector("h4").textContent = t.step3_title;
+        steps[2].querySelector("p").textContent = t.step3_desc;
+    }
+    
+    
+    const faqH2 = document.querySelector(".faq-section h2");
+    if (faqH2) faqH2.textContent = t.faq_title;
+    const faqSub = document.querySelector(".faq-subtitle");
+    if (faqSub) faqSub.textContent = t.faq_sub;
+    
+    const faqItems = document.querySelectorAll(".faq-item");
+    if (faqItems.length >= 3) {
+        faqItems[0].querySelector("summary").textContent = t.faq1_q;
+        faqItems[0].querySelector(".faq-content p").textContent = t.faq1_a;
+        faqItems[1].querySelector("summary").textContent = t.faq2_q;
+        faqItems[1].querySelector(".faq-content p").textContent = t.faq2_a;
+        faqItems[2].querySelector("summary").textContent = t.faq3_q;
+        faqItems[2].querySelector(".faq-content p").textContent = t.faq3_a;
+    }
+    
+    
+    const footerTagline = document.querySelector(".footer-tagline");
+    if (footerTagline) footerTagline.textContent = t.footer_tag;
+    
+    const footerLinks = document.querySelectorAll(".footer-links a");
+    if (footerLinks.length >= 3) {
+        footerLinks[0].textContent = t.footer_priv;
+        footerLinks[1].textContent = t.footer_term;
+        footerLinks[2].textContent = t.footer_cook;
+    }
+
+    const cookieText = document.querySelector(".cookie-content p");
+    if (cookieText) cookieText.textContent = t.cookie_text;
+    const cookieAccept = document.querySelector(".cookie-btn.accept");
+    if (cookieAccept) cookieAccept.textContent = t.cookie_accept;
+    const cookieReject = document.querySelector(".cookie-btn.reject");
+    if (cookieReject) cookieReject.textContent = t.cookie_reject;
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("cookiesAccepted")) {
+        const banner = document.getElementById("cookie-banner");
+        if (banner) {
+            setTimeout(() => banner.classList.add("show"), 1000);
+        }
+    }
+});
 
 function acceptCookies() {
-    localStorage.setItem("cookiesRespondidos", "aceite");
-    document.getElementById("cookie-banner").classList.remove("show");
+    localStorage.setItem("cookiesAccepted", "true");
+    const banner = document.getElementById("cookie-banner");
+    if (banner) banner.classList.remove("show");
 }
 
 function rejectCookies() {
-    
-    localStorage.setItem("cookiesRespondidos", "recusado");
-    document.getElementById("cookie-banner").classList.remove("show");
+    const banner = document.getElementById("cookie-banner");
+    if (banner) banner.classList.remove("show");
 }
